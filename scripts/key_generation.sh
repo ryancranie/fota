@@ -15,27 +15,25 @@ declare -A KEYS=(
 
 for key in "${!KEYS[@]}"; do
   FILE="$KEY_DIR/${KEYS[$key]}"
+  # Skip overwrite prompt and just use existing keys or generate new ones
   if [ -f "$FILE" ]; then
-    read -p "$FILE exists. Overwrite? (y/n): " choice
-    if [[ "$choice" != "y" ]]; then
-      echo "Skipping $FILE"
-      continue
-    fi
+    echo "Using existing key: $FILE"
+    continue
   fi
 
   case $key in
     ECDSA_PRIVATE)
-      openssl ecparam -name prime256v1 -genkey -noout -out "$FILE";;
+      openssl ecparam -name prime256v1 -genkey -noout -out "$FILE" 2>/dev/null;;
     ECDSA_PUBLIC)
-      openssl ec -in ecdsa_private.pem -pubout -out "$FILE";;
+      openssl ec -in ecdsa_private.pem -pubout -out "$FILE" 2>/dev/null;;
     ED25519_PRIVATE)
-      openssl genpkey -algorithm ED25519 -out "$FILE";;
+      openssl genpkey -algorithm ED25519 -out "$FILE" 2>/dev/null;;
     ED25519_PUBLIC)
-      openssl pkey -in ed25519_private.pem -pubout -out "$FILE";;
+      openssl pkey -in ed25519_private.pem -pubout -out "$FILE" 2>/dev/null;;
     ECDH_PRIVATE)
-      openssl ecparam -name prime256v1 -genkey -noout -out "$FILE";;
+      openssl ecparam -name prime256v1 -genkey -noout -out "$FILE" 2>/dev/null;;
     ECDH_PUBLIC)
-      openssl ec -in ecdh_private.pem -pubout -out "$FILE";;
+      openssl ec -in ecdh_private.pem -pubout -out "$FILE" 2>/dev/null;;
   esac
   echo "Generated: $FILE"
 done
