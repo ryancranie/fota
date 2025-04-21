@@ -1,0 +1,69 @@
+.
+├── binaries
+│   ├── bulb.bin
+│   ├── bulb_encrypted
+│   │   ├── aes-128_bulb.enc
+│   │   ├── aes-128_bulb.sig
+│   │   ├── chacha20_bulb.enc
+│   │   ├── chacha20_bulb.sig
+│   │   ├── ecdh_bulb.enc
+│   │   ├── ecdh_bulb.sig
+│   │   ├── ecdh_shared_secret.bin
+│   │   ├── ecdsa_bulb.enc
+│   │   ├── ecdsa_bulb.sig
+│   │   ├── ed25519_bulb.enc
+│   │   └── ed25519_bulb.sig
+│   ├── camera.bin
+│   ├── camera_encrypted
+│   │   ├── aes-128_camera.enc
+│   │   ├── aes-128_camera.sig
+│   │   ├── chacha20_camera.enc
+│   │   ├── chacha20_camera.sig
+│   │   ├── ecdh_camera.enc
+│   │   ├── ecdh_camera.sig
+│   │   ├── ecdh_shared_secret.bin
+│   │   ├── ecdsa_camera.enc
+│   │   ├── ecdsa_camera.sig
+│   │   ├── ed25519_camera.enc
+│   │   └── ed25519_camera.sig
+│   ├── hub.bin
+│   ├── hub_encrypted
+│   │   ├── aes-128_hub.enc
+│   │   ├── aes-128_hub.sig
+│   │   ├── chacha20_hub.enc
+│   │   ├── chacha20_hub.sig
+│   │   ├── ecdh_hub.enc
+│   │   ├── ecdh_hub.sig
+│   │   ├── ecdh_shared_secret.bin
+│   │   ├── ecdsa_hub.enc
+│   │   ├── ecdsa_hub.sig
+│   │   ├── ed25519_hub.enc
+│   │   └── ed25519_hub.sig
+│   ├── lock.bin
+│   └── lock_encrypted
+│       ├── aes-128_lock.enc
+│       ├── aes-128_lock.sig
+│       ├── chacha20_lock.enc
+│       ├── chacha20_lock.sig
+│       ├── ecdh_lock.enc
+│       ├── ecdh_lock.sig
+│       ├── ecdh_shared_secret.bin
+│       ├── ecdsa_lock.enc
+│       ├── ecdsa_lock.sig
+│       ├── ed25519_lock.enc
+│       └── ed25519_lock.sig
+├── encrypt_firmware.sh
+├── encrypt_metrics.csv
+├── firmware_gen.sh
+├── key_generation.sh
+├── keys
+│   ├── ecdh_private.pem
+│   ├── ecdh_public.pem
+│   ├── ecdsa_private.pem
+│   ├── ecdsa_public.pem
+│   ├── ed25519_private.pem
+│   └── ed25519_public.pem
+├── tree_fota.txt
+└── upload_firmware.sh
+
+7 directories, 60 files

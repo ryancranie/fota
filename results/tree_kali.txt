@@ -1,0 +1,92 @@
+.
+├── attack_metrics.csv
+├── captured_files
+│   ├── firmware_notification.cap
+│   └── mitm_captured
+│       └── firmware_capture.mitm
+├── captured_firmware
+│   ├── aes-128_lock.enc
+│   ├── chacha20_lock.enc
+│   ├── decrypted_aes-128_lock.bin
+│   ├── decrypted_chacha20_lock.bin
+│   ├── ecdh_lock.enc
+│   ├── ecdh_lock.sig
+│   ├── ecdsa_lock.enc
+│   ├── ecdsa_lock.sig
+│   ├── ed25519_lock.enc
+│   └── ed25519_lock.sig
+├── extracted_firmware
+│   ├── bulb.bin
+│   ├── camera.bin
+│   ├── hub.bin
+│   └── lock.bin
+├── extracted_keys
+│   ├── ecdh_public.pem
+│   ├── ecdsa_public.pem
+│   └── ed25519_public.pem
+├── fota_attack.sh
+├── kali_encrypt_firmware.sh
+├── kali_key_generation.sh
+├── keys
+│   ├── ecdh_private.pem
+│   ├── ecdh_public.pem
+│   ├── ecdsa_private.pem
+│   ├── ecdsa_public.pem
+│   ├── ed25519_private.pem
+│   └── ed25519_public.pem
+├── modified_firmware
+│   ├── bulb_modified.bin
+│   ├── bulb_modified_encrypted
+│   │   ├── aes-128_bulb_modified.enc
+│   │   ├── aes-128_bulb_modified.sig
+│   │   ├── chacha20_bulb_modified.enc
+│   │   ├── chacha20_bulb_modified.sig
+│   │   ├── ecdh_bulb_modified.enc
+│   │   ├── ecdh_bulb_modified.sig
+│   │   ├── ecdh_shared_secret.bin
+│   │   ├── ecdsa_bulb_modified.enc
+│   │   ├── ecdsa_bulb_modified.sig
+│   │   ├── ed25519_bulb_modified.enc
+│   │   └── ed25519_bulb_modified.sig
+│   ├── camera_modified.bin
+│   ├── camera_modified_encrypted
+│   │   ├── aes-128_camera_modified.enc
+│   │   ├── aes-128_camera_modified.sig
+│   │   ├── chacha20_camera_modified.enc
+│   │   ├── chacha20_camera_modified.sig
+│   │   ├── ecdh_camera_modified.enc
+│   │   ├── ecdh_camera_modified.sig
+│   │   ├── ecdh_shared_secret.bin
+│   │   ├── ecdsa_camera_modified.enc
+│   │   ├── ecdsa_camera_modified.sig
+│   │   ├── ed25519_camera_modified.enc
+│   │   └── ed25519_camera_modified.sig
+│   ├── hub_modified.bin
+│   ├── hub_modified_encrypted
+│   │   ├── aes-128_hub_modified.enc
+│   │   ├── aes-128_hub_modified.sig
+│   │   ├── chacha20_hub_modified.enc
+│   │   ├── chacha20_hub_modified.sig
+│   │   ├── ecdh_hub_modified.enc
+│   │   ├── ecdh_hub_modified.sig
+│   │   ├── ecdh_shared_secret.bin
+│   │   ├── ecdsa_hub_modified.enc
+│   │   ├── ecdsa_hub_modified.sig
+│   │   ├── ed25519_hub_modified.enc
+│   │   └── ed25519_hub_modified.sig
+│   ├── lock_modified.bin
+│   └── lock_modified_encrypted
+│       ├── aes-128_lock_modified.enc
+│       ├── aes-128_lock_modified.sig
+│       ├── chacha20_lock_modified.enc
+│       ├── chacha20_lock_modified.sig
+│       ├── ecdh_lock_modified.enc
+│       ├── ecdh_lock_modified.sig
+│       ├── ecdh_shared_secret.bin
+│       ├── ecdsa_lock_modified.enc
+│       ├── ecdsa_lock_modified.sig
+│       ├── ed25519_lock_modified.enc
+│       └── ed25519_lock_modified.sig
+└── tree_kali.txt
+
+12 directories, 78 files

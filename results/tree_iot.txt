@@ -1,0 +1,77 @@
+.
+├── downloaded_firmware
+│   ├── aes-128_bulb.enc
+│   ├── aes-128_bulb_modified.enc
+│   ├── aes-128_camera.enc
+│   ├── aes-128_camera_modified.enc
+│   ├── aes-128_hub.enc
+│   ├── aes-128_lock.enc
+│   ├── chacha20_bulb.enc
+│   ├── chacha20_camera.enc
+│   ├── chacha20_camera_modified.enc
+│   ├── chacha20_hub.enc
+│   ├── chacha20_lock.enc
+│   ├── decrypted_aes-128_bulb.bin
+│   ├── decrypted_aes-128_bulb_modified.bin
+│   ├── decrypted_aes-128_camera.bin
+│   ├── decrypted_aes-128_camera_modified.bin
+│   ├── decrypted_aes-128_hub.bin
+│   ├── decrypted_aes-128_lock.bin
+│   ├── decrypted_chacha20_bulb.bin
+│   ├── decrypted_chacha20_camera.bin
+│   ├── decrypted_chacha20_camera_modified.bin
+│   ├── decrypted_chacha20_hub.bin
+│   ├── decrypted_chacha20_lock.bin
+│   ├── decrypted_ecdh_bulb.bin
+│   ├── decrypted_ecdh_camera.bin
+│   ├── decrypted_ecdh_hub.bin
+│   ├── decrypted_ecdh_lock.bin
+│   ├── decrypted_ecdsa_bulb.bin
+│   ├── decrypted_ecdsa_camera.bin
+│   ├── decrypted_ecdsa_hub.bin
+│   ├── decrypted_ecdsa_lock.bin
+│   ├── decrypted_ed25519_bulb.bin
+│   ├── decrypted_ed25519_camera.bin
+│   ├── decrypted_ed25519_hub.bin
+│   ├── decrypted_ed25519_lock.bin
+│   ├── ecdh_bulb.enc
+│   ├── ecdh_bulb.sig
+│   ├── ecdh_camera.enc
+│   ├── ecdh_camera_modified.enc
+│   ├── ecdh_camera_modified.sig
+│   ├── ecdh_camera.sig
+│   ├── ecdh_hub.enc
+│   ├── ecdh_hub.sig
+│   ├── ecdh_lock.enc
+│   ├── ecdh_lock.sig
+│   ├── ecdh_shared_secret.bin
+│   ├── ecdsa_bulb.enc
+│   ├── ecdsa_bulb.sig
+│   ├── ecdsa_camera.enc
+│   ├── ecdsa_camera_modified.enc
+│   ├── ecdsa_camera_modified.sig
+│   ├── ecdsa_camera.sig
+│   ├── ecdsa_hub.enc
+│   ├── ecdsa_hub.sig
+│   ├── ecdsa_lock.enc
+│   ├── ecdsa_lock.sig
+│   ├── ed25519_bulb.enc
+│   ├── ed25519_bulb.sig
+│   ├── ed25519_camera.enc
+│   ├── ed25519_camera_modified.enc
+│   ├── ed25519_camera_modified.sig
+│   ├── ed25519_camera.sig
+│   ├── ed25519_hub.enc
+│   ├── ed25519_hub.sig
+│   ├── ed25519_lock.enc
+│   └── ed25519_lock.sig
+├── firmware_listener.sh
+├── fota_metrics.csv
+├── iot_simulation.sh
+├── tree.txt
+└── trusted_keys
+    ├── ecdh_public.pem
+    ├── ecdsa_public.pem
+    └── ed25519_public.pem
+
+3 directories, 72 files
