@@ -1,0 +1,1 @@
+Put the generated .bin files from firmware_gen.sh here - assume we "extracted" the firmware.
